@@ -4,7 +4,10 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box
+}
 
+*{
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*main container*/
@@ -40,6 +43,11 @@
   margin: 0 auto;
 }
 
+.nav-menu{
+  width: 100%;
+  background-color: #fff;
+}
+
 .nav-menu, .nav-menu ul, .nav-menu li{
   padding: 0;
   margin: 0;
@@ -48,12 +56,22 @@
 .nav-menu li{
   list-style-type: none;
   float: left;
+  position: relative; /*Makes sub nav open downward*/
+  padding-left: 1px;
+  padding: 2px;
+}
+
+/*Make sub menus of sub menus list horizontally*/
+.nav-menu ul ul {
+  margin-top: -1.2em;
+  left: 100%;
 }
 
 /*Hide sub menus*/
-.nav-menu ul{
+.nav-menu ul {
   display: none;
   position: absolute;
+  background-color: #507AA5;
 }
 
 .nav-menu a {
