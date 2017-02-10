@@ -50,22 +50,43 @@
   float: left;
 }
 
+/*Hide sub menus*/
 .nav-menu ul{
   display: none;
+  position: absolute;
 }
 
+.nav-menu a {
+  color: #000;
+  display:block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  background-color: #507AA5;
+  color: #fff;
+}
+
+/* TODO: Check why you need clear here, dont quite understand */
 .nav-menu + *{
   clear: left;
 }
 
+/*Show sub menus when moused over*/
 .nav-menu li:hover > ul
 {
   display: block;
 }
 
+/*Show sub menus when moused over*/
 .nav-menu ul.parent_hover
 {
   display: block;
+}
+
+.navmenu > li {
+  float: left;
 }
 
 .end-menu{
