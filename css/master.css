@@ -1,5 +1,5 @@
 *{
-  outline: 1px solid red !important;
+  /*outline: 1px solid red !important;*/
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -43,6 +43,8 @@
   margin: 0 auto;
 }
 
+/*Start Nav*/
+
 .nav-menu{
   width: 100%;
   background-color: #fff;
@@ -57,14 +59,7 @@
   list-style-type: none;
   float: left;
   position: relative; /*Makes sub nav open downward*/
-  padding-left: 1px;
   padding: 2px;
-}
-
-/*Make sub menus of sub menus list horizontally*/
-.nav-menu ul ul {
-  margin-top: -1.2em;
-  left: 100%;
 }
 
 /*Hide sub menus*/
@@ -72,6 +67,13 @@
   display: none;
   position: absolute;
   background-color: #507AA5;
+  margin-top: 2px;
+}
+
+/*Make sub menus of sub menus list horizontally*/
+.nav-menu ul ul {
+  margin-top: -1.2em;
+  left: 100%;
 }
 
 .nav-menu a {
@@ -86,21 +88,19 @@
   color: #fff;
 }
 
+/*Show sub menus when moused over*/
+.nav-menu li:hover > ul {
+  display: block;
+}
+
+/*Show sub menus when moused over*/
+.nav-menu ul.parent_hover {
+  display: block;
+}
+
 /* TODO: Check why you need clear here, dont quite understand */
-.nav-menu + *{
+.nav-menu + * {
   clear: left;
-}
-
-/*Show sub menus when moused over*/
-.nav-menu li:hover > ul
-{
-  display: block;
-}
-
-/*Show sub menus when moused over*/
-.nav-menu ul.parent_hover
-{
-  display: block;
 }
 
 .navmenu > li {
@@ -109,4 +109,31 @@
 
 .end-menu{
   clear: left;
+}
+
+/*End Nav, Start Search*/
+.form-wrapper {
+	background-color: #FAFAFA;
+	border-color: #DADADA;
+	border-style: solid;
+	border-width: 1px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+  float: right;
+	overflow: hidden;
+	padding: 8px;
+	/*width: 25%;*/
+}
+
+.form-wrapper #search {
+  border: 0;
+  background-color: #FAFAFA;
+}
+
+.form-wrapper #submit {
+	background-color: #507AA5;
+	color: #fafafa;
+	cursor: pointer;
+	float: right;
 }
