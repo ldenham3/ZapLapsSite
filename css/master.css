@@ -112,6 +112,7 @@
 }
 
 /*End Nav, Start Search*/
+
 .form-wrapper {
 	background-color: #FAFAFA;
 	border-color: #DADADA;
@@ -122,18 +123,29 @@
 	border-radius: 10px;
   float: right;
 	overflow: hidden;
-	padding: 8px;
-	/*width: 25%;*/
 }
 
 .form-wrapper #search {
+  padding: 8px;
   border: 0;
   background-color: #FAFAFA;
 }
 
 .form-wrapper #submit {
+  border: 0;
 	background-color: #507AA5;
 	color: #fafafa;
 	cursor: pointer;
 	float: right;
+  /*margin-left: -38px;*/
+  -webkit-border-radius:0px 5px 5px 0px;
+  -moz-border-radius:0px 5px 5px 0px;
+  border-radius:0px 5px 5px 0px;
+  height: 35px;
 }
+
+/*removes focus boxes arounf forms*/
+input:focus, select:focus, textarea:focus,button:focus {
+    outline: none;
+}
+/*End Search, Begin ?*/
