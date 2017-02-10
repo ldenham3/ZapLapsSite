@@ -10,6 +10,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+img{
+  padding: 5px 0 0 5px;
+}
+
 /*main container*/
 .container{
   display: flex;
@@ -28,19 +32,10 @@
 
 /* TODO: Change these to be appropriate, values are for testing only */
 .flex-header{
+  display: flex;
   width: 100%;
   flex-wrap: nowrap;
-}
-
-/* TODO: Change these to be appropriate, values are for testing only */
-.flex-content{
-  width: 65%;
-  height: 100px;
-}
-
-.flex-nav{
-  justify-content: flex-start;
-  margin: 0 auto;
+  border-bottom: 2px solid #DADADA;
 }
 
 /*Start Nav*/
@@ -50,16 +45,17 @@
   background-color: #fff;
 }
 
-.nav-menu, .nav-menu ul, .nav-menu li{
-  padding: 0;
-  margin: 0;
+.nav-menu ul, .nav-menu li{
+  padding: 1em;
+  /*margin: 0;*/
 }
 
 .nav-menu li{
   list-style-type: none;
   float: left;
   position: relative; /*Makes sub nav open downward*/
-  padding: 2px;
+  padding: 5px 20px 0 20px;
+  display: flex;
 }
 
 /*Hide sub menus*/
@@ -67,12 +63,10 @@
   display: none;
   position: absolute;
   background-color: #507AA5;
-  margin-top: 2px;
 }
 
 /*Make sub menus of sub menus list horizontally*/
 .nav-menu ul ul {
-  margin-top: -1.2em;
   left: 100%;
 }
 
@@ -113,6 +107,11 @@
 
 /*End Nav, Start Search*/
 
+li.align-search {
+  float: right;
+  padding-top: 0;
+}
+
 .form-wrapper {
 	background-color: #FAFAFA;
 	border-color: #DADADA;
@@ -148,4 +147,25 @@
 input:focus, select:focus, textarea:focus,button:focus {
     outline: none;
 }
-/*End Search, Begin ?*/
+/*End Search, Begin Hamburger Menu*/
+
+/* TODO: hamburger menu */
+
+/*End Hamburger, Start Content*/
+/* TODO: Change these to be appropriate, values are for testing only */
+.flex-content{
+  width: 70%;
+}
+
+.flex-article {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+/*End content, start Sidebar*/
+.blank-sidebar{
+  padding-left: 1em;
+  width: 20%;
+  border-left:1px solid #000;
+}

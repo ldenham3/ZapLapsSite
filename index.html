@@ -7,6 +7,7 @@
     <title>Website Recreation for ZapLabs</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
   </head>
   <body>
     <div class="container">
@@ -14,50 +15,80 @@
       <!-- header -->
       <header class="flex-header">
         <!-- dropdown buttons container -->
-        <div class="flex-nav">
-          <ul class="nav-menu">
-            <li><a href="/tl1">Web Design</a></li>
-            <li><a href="/tl2">GUI</a></li>
-            <li><a href="/tl3">Mobile Dev</a></li>
-            <li><a href="/tl4">Graphic Design</a>
-              <ul>
-                <li><a href="/tl4/item1">Fireworks</a></li>
-                <li><a href="/tl4/item2">Flash</a></li>
-                <li><a href="/tl4/item3">Icon Design</a></li>
-                <li><a href="/tl4/item4">Illustrator</a></li>
-                <li><a href="/tl4/item5">Logo Design</a></li>
-                <li><a href="/tl4/item6">Photoshop</a></li>
-                <li><a href="/tl4/item7">Typography</a></li>
-                <li><a href="/tl4/item8">Vector Resources</a></li>
-                <li><a href="/tl4/item9">Graphic Design Archive</a>
-                  <ul>
-                    <li><a href="/tl4/item9/sub1">Empty</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="/tl5">Top Level Link</a></li>
-            <li><a href="/tl6">Top Level Link</a></li>
-            <li><a href="/tl7">Top Level Link</a></li>
-          </ul>
-          <!-- IE support to be able to use clear in the css -->
-          <div class="end-menu"></div>
-          <div class="flex-search">
+        <ul class="nav-menu">
+          <li>
+            <a href="/tl1">Web Design</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+          </li>
+          <li>
+            <a href="/tl2">GUI</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+          </li>
+          <li>
+            <a href="/tl3">Mobile Dev</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+          </li>
+          <li><a href="/tl4">Graphic Design</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+            <ul>
+              <li><a href="/tl4/item1">Fireworks</a></li>
+              <li><a href="/tl4/item2">Flash</a></li>
+              <li><a href="/tl4/item3">Icon Design</a></li>
+              <li><a href="/tl4/item4">Illustrator</a></li>
+              <li><a href="/tl4/item5">Logo Design</a></li>
+              <li><a href="/tl4/item6">Photoshop</a></li>
+              <li><a href="/tl4/item7">Typography</a></li>
+              <li><a href="/tl4/item8">Vector Resources</a></li>
+              <li><a href="/tl4/item9">Graphic Design Archive</a>
+                <ul>
+                  <li><a href="/tl4/item9/sub1">Empty</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/tl5">Freelance</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+          </li>
+          <li>
+            <a href="/tl6">Resources</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+          </li>
+          <li>
+            <a href="/tl7">Inspiration</a>
+            <img src="img/arrow.jpg" alt="arrow" width="15px" height="15px">
+          </li>
+          <li class="align-search">
             <form class="form-wrapper">
               <input type="text" id="search" placeholder="Search here..." required>
               <input type="submit" value="Search" id="submit">
             </form>
-          </div>
-
-        </div>
-        <!-- search bar -->
-
+          </li>
+        </ul>
+          <!-- IE support to be able to use clear in the css -->
+        <div class="end-menu"></div>
       </header>
 
       <!-- main content section -->
       <div class="flex-content">
-        <p>test</p>
+        <article class="flex-article">
+          <img src="http://placehold.it/150x150" alt="placeholder">
+        </article>
+
+        <hr>
+
+        <article class="flex-article">
+          <img src="http://placehold.it/150x150" alt="placeholder">
+        </article>
+
+        <hr>
+
+        <article class="flex-article">
+          <img src="http://placehold.it/150x150" alt="placeholder">
+        </article>
       </div>
+
+      <div class="blank-sidebar"></div>
 
     </div>
   </body>
