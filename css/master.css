@@ -34,3 +34,40 @@
   width: 65%;
   height: 100px;
 }
+
+.flex-nav{
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.nav-menu, .nav-menu ul, .nav-menu li{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li{
+  list-style-type: none;
+  float: left;
+}
+
+.nav-menu ul{
+  display: none;
+}
+
+.nav-menu + *{
+  clear: left;
+}
+
+.nav-menu li:hover > ul
+{
+  display: block;
+}
+
+.nav-menu ul.parent_hover
+{
+  display: block;
+}
+
+.end-menu{
+  clear: left;
+}
