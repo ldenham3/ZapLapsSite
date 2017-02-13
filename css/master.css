@@ -1,5 +1,5 @@
 *{
-  /*outline: 1px solid red !important;*/
+  outline: 1px solid red !important;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -19,6 +19,9 @@ img{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: baseline;
 }
 
 /*Default flex item properties*/
@@ -153,14 +156,29 @@ input:focus, select:focus, textarea:focus,button:focus {
 
 /*End Hamburger, Start Content*/
 /* TODO: Change these to be appropriate, values are for testing only */
-.flex-content{
+article{
   width: 70%;
 }
 
-.flex-article {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 0;
+ul{
+  list-style: none;
+}
+
+p{
+  display: inline-block;
+  margin: 0;
+}
+
+div{
+  display: inline-block;
+}
+
+h1{
+  color: #507AA5;
+}
+
+.right{
+  float: right;
 }
 
 /*End content, start Sidebar*/
