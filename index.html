@@ -15,6 +15,10 @@
       <!-- header -->
       <header class="flex-header">
         <!-- dropdown buttons container -->
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
         <ul class="nav-menu">
           <li id="left-item">
             <a href="/tl1">Web Design</a>
@@ -67,30 +71,34 @@
         </ul>
           <!-- IE support to be able to use clear in the css -->
         <div class="end-menu"></div>
+
+
       </header>
 
       <!-- main content section -->
-      <div class="container main">
-        <article>
-          <img class="article-img" src="http://placehold.it/150x150" alt="placeholder img">
-          <div>
-            <ul>
-              <li><h1 class="blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1></li>
-              <li><hr></li>
-              <li>
-                <p>February 8, 2013</p>
-                <p class="right blue">10 Comments and 22 Reactions</p>
-              </li>
-              <li><hr></li>
-              <li>
-                <p>Topics -> <p class="blue">Competition</p></p>
-                <p class="right">Author</p>
-              </li>
-              <li><hr></li>
-              <li><h4 class="blue">Lorem ipsum dolor sit amet.</h4></li>
-            </ul>
-          </div>
-        </article>
+      <div class="container">
+        <div class="articles">
+          <article>
+            <img class="article-img" src="http://placehold.it/150x150" alt="placeholder img">
+            <div>
+              <ul>
+                <li><h1 class="blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1></li>
+                <li><hr></li>
+                <li>
+                  <p>February 8, 2013</p>
+                  <p class="right blue extra-info">10 Comments and 22 Reactions</p>
+                </li>
+                <li><hr></li>
+                <li>
+                  <p class="extra-info">Topics<img class="extra-info" src="img/arrow.jpg" alt="arrow" width="15px" height="15px"><p class="blue extra-info">Competition</p></p>
+                  <p class="right author">Author</p>
+                </li>
+                <li><hr></li>
+                <li><h4 class="blue">Lorem ipsum dolor sit amet.</h4></li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
 
     </div>

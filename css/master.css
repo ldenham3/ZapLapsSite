@@ -131,7 +131,6 @@ li.align-search {
 	color: #fafafa;
 	cursor: pointer;
 	float: right;
-  /*margin-left: -38px;*/
   -webkit-border-radius:0px 5px 5px 0px;
   -moz-border-radius:0px 5px 5px 0px;
   border-radius:0px 5px 5px 0px;
@@ -145,8 +144,8 @@ input:focus, select:focus, textarea:focus,button:focus {
 
 /*MAIN*/
 .article-img {
-   padding:5px;
-   border:1px solid #DADADA;
+  padding:5px;
+  border:1px solid #DADADA;
 }
 
 article{
@@ -179,8 +178,104 @@ div{
   color: #507AA5;
 }
 
-.main{
+.articles{
   margin: 2em;
 }
 
 /*TEST*/
+
+/* header */
+.flex-header ul {
+  overflow: hidden;
+}
+
+
+/* menu */
+
+.flex-header .nav-menu {
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.flex-header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.flex-header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.flex-header .menu-icon .navicon:before,
+.flex-header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.flex-header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.flex-header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+/*dont display the radio button used to toggle the inputs*/
+.flex-header .menu-btn {
+  display: none;
+}
+
+/* TODO: Might need? */
+.flex-header .menu-btn:checked ~ .nav-menu {
+  max-height: 240px;
+}
+
+/*The next four secions transform the hamburger menu into the x shape*/
+.flex-header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.flex-header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.flex-header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.flex-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.flex-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 1218px) {
+  .flex-header li {
+    float: left;
+  }
+  .flex-header .nav-menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .flex-header .menu-icon {
+    display: none;
+  }
+}

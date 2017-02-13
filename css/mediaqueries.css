@@ -1,7 +1,31 @@
 
-/*Collapses nav list into hamburger menu*/
-@media screen and (max-width: 1262px) {
-  img.article-img{
+@media screen and (min-width: 1218px) {
+  .flex-header ul {
+    overflow:visible;
+  }
+}
+
+/*@media screen and (max-width: 1218px) {
+  .nav-menu{
     display: none;
+  }
+}*/
+
+
+@media screen and (max-width: 965px) {
+  .article-img{
+    display: none;
+  }
+  ul{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .extra-info{
+    display: none;
+  }
+  .author{
+    float: left;
   }
 }
