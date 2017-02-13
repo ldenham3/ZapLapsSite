@@ -1,5 +1,5 @@
 *{
-  outline: 1px solid red !important;
+  /*outline: 1px solid red !important;*/
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -29,13 +29,12 @@
   flex-basis: 0;
 }
 
-/* TODO: Change these to be appropriate, values are for testing only */
 .flex-header{
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
   border-bottom: 2px solid #DADADA;
-  margin-top: 1em;
+  margin: 1em 32px 0 32px;
 }
 
 /*Start Nav*/
@@ -43,18 +42,14 @@
 .nav-menu{
   width: 100%;
   background-color: #fff;
-}
-
-.nav-menu ul, .nav-menu li{
-  padding: 1em;
-  /*margin: 0;*/
+  padding-left: 10px;
 }
 
 .nav-menu li{
   list-style-type: none;
   float: left;
   position: relative; /*Makes sub nav open downward*/
-  padding: 5px 20px 0 20px;
+  padding: 5px 30px 0 0;
   display: flex;
 }
 
@@ -147,18 +142,15 @@ li.align-search {
 input:focus, select:focus, textarea:focus,button:focus {
     outline: none;
 }
-/*End Search, Begin Hamburger Menu*/
 
-/* TODO: hamburger menu */
+/*MAIN*/
+.article-img {
+   padding:5px;
+   border:1px solid #DADADA;
+}
 
-/*End Hamburger, Start Content*/
-/* TODO: Change these to be appropriate, values are for testing only */
 article{
-  width: 65%;
-  display: flex;
-  padding: 1em 0 1em 1em;
   border-bottom: 2px solid #DADADA;
-  /*margin: 5em;*/
 }
 
 ul{
@@ -187,9 +179,8 @@ div{
   color: #507AA5;
 }
 
-/*End content, start Sidebar*/
-.blank-sidebar{
-  padding-left: 1em;
-  width: 20%;
-  border-left:1px solid #000;
+.main{
+  margin: 2em;
 }
+
+/*TEST*/
