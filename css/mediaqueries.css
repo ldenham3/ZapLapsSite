@@ -5,11 +5,18 @@
   }
 }
 
-/*@media screen and (max-width: 1218px) {
-  .nav-menu{
+@media screen and (max-width: 1218px) {
+  .nav-menu li{
+    display: block;
+    float: none;
+  }
+  .nav-menu img{
     display: none;
   }
-}*/
+  .search{
+    display: none;
+  }
+}
 
 
 @media screen and (max-width: 965px) {
