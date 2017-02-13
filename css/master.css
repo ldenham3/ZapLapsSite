@@ -1,5 +1,5 @@
 *{
-  /*outline: 1px solid red !important;*/
+  outline: 1px solid red !important;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -10,16 +10,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-img{
-  padding: 5px 0 0 5px;
-}
-
 /*main container*/
 .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: flex-start;
   align-items: baseline;
 }
@@ -39,6 +35,7 @@ img{
   width: 100%;
   flex-wrap: nowrap;
   border-bottom: 2px solid #DADADA;
+  margin-top: 1em;
 }
 
 /*Start Nav*/
@@ -157,11 +154,20 @@ input:focus, select:focus, textarea:focus,button:focus {
 /*End Hamburger, Start Content*/
 /* TODO: Change these to be appropriate, values are for testing only */
 article{
-  width: 70%;
+  width: 65%;
+  display: flex;
+  padding: 1em 0 1em 1em;
+  border-bottom: 2px solid #DADADA;
+  /*margin: 5em;*/
 }
 
 ul{
   list-style: none;
+  margin-top: 0;
+}
+
+h1{
+  margin: 0;
 }
 
 p{
