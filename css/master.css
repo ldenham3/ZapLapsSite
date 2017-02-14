@@ -83,7 +83,7 @@ a{
 }
 
 /*Hide sub menus*/
-.nav-menu ul {
+.nav-menu ul{
   display: none;
   position: absolute;
   background-color: #507AA5;
@@ -92,11 +92,20 @@ a{
 	border-radius: 0 10px 10px 10px;
   margin-top: 35px;
   padding-left: 0;
+  width: 220px;
 }
 
 /*Make sub menus of sub menus list horizontally*/
 .nav-menu ul ul {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  top: -35px;
   left: 100%;
+}
+
+.nav-menu ul a{
+  display: block;
 }
 
 .nav-menu a {
@@ -106,21 +115,27 @@ a{
   text-decoration: none;
 }
 
+.sub-menu a{
+  color: #fff;
+  padding: 5px 5px 5px 5px;
+}
+
+.sub-menu li{
+  width: 100%;
+  padding: 0;
+}
+
+
 .nav-menu a:hover {
-  -webkit-border-radius: 10px 10px 10px 0;
-  -moz-border-radius: 10px 10px 10px 0;
-  border-radius: 10px 10px 10px 0;
-  background-color: #507AA5;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #466A90;
   color: #fff;
 }
 
 /*Show sub menus when moused over*/
 .nav-menu li:hover > ul {
-  display: block;
-}
-
-/*Show sub menus when moused over*/
-.nav-menu ul.parent_hover {
   display: block;
 }
 
@@ -245,6 +260,7 @@ div{
 .articles{
   margin: 1em;
   width: 65vw;
+  margin-left: 32px;
 }
 
 /*TEST*/
