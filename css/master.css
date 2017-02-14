@@ -66,7 +66,7 @@ a{
 .nav-menu{
   width: 100%;
   background-color: #fff;
-  padding-left: 10px;
+  padding-left: 0;
   margin-top: 0;
 }
 
@@ -74,7 +74,7 @@ a{
   list-style-type: none;
   float: left;
   position: relative; /*Makes sub nav open downward*/
-  margin: 5px 20px 0 0;
+  margin: 0 5px 0 0;
   display: flex;
 }
 
@@ -117,7 +117,7 @@ a{
 
 .sub-menu a{
   color: #fff;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
 }
 
 .sub-menu li{
@@ -153,10 +153,8 @@ a{
 }
 
 /*End Nav, Start Search*/
-
-li.align-search {
+#align-search{
   float: right;
-  padding-top: 0;
 }
 
 .form-wrapper {
@@ -167,7 +165,6 @@ li.align-search {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-  float: right;
 	overflow: hidden;
 }
 
@@ -347,7 +344,7 @@ div{
   top: 0;
 }
 
-@media (min-width: 1218px) {
+@media (min-width: 1160px) {
   .flex-header li {
     float: left;
   }

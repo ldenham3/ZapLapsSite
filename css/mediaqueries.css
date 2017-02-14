@@ -1,11 +1,11 @@
 
-@media screen and (min-width: 1218px) {
+@media screen and (min-width: 1160px) {
   .flex-header ul {
     overflow:visible;
   }
 }
 
-@media screen and (max-width: 1218px) {
+@media screen and (max-width: 1160px) {
   .nav-menu li{
     display: block;
     float: none;
@@ -20,8 +20,17 @@
 
 
 @media screen and (max-width: 965px) {
-  .article-img{
+  .image{
     display: none;
+  }
+  article ul{
+    margin-left: 0;
+  }
+  .align-article-info{
+    width: 90vw;
+  }
+  .articles{
+    width: 90vw;
   }
   ul{
     padding-left: 0;
