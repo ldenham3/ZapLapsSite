@@ -22,6 +22,11 @@ h1{
 
 h4{
   margin: 5px 0 5px 0;
+  font-weight: normal;
+}
+
+a{
+  text-decoration: none;
 }
 
 /*main container*/
@@ -177,16 +182,22 @@ input:focus, select:focus, textarea:focus,button:focus {
 
 .align-article-info{
   vertical-align: top;
+  width: 70vw;
 }
 
 article{
   border-bottom: 2px solid #DADADA;
+  min-height: 200px;
 }
 
 article ul{
   list-style: none;
   margin-top: 0;
-  margin-left: 10em;
+  margin-left: 9em;
+}
+
+hr{
+  border: 1px solid #F1F1F1;
 }
 
 p{
@@ -208,7 +219,7 @@ div{
 
 .articles{
   margin: 2em;
-  width: 70%;
+  width: 70vw;
 }
 
 /*TEST*/
