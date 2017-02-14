@@ -65,7 +65,6 @@ a{
 
 .nav-menu{
   width: 100%;
-  background-color: #fff;
   padding-left: 0;
   margin-top: 0;
 }
@@ -87,19 +86,31 @@ a{
   display: none;
   position: absolute;
   background-color: #507AA5;
-  -webkit-border-radius: 0 10px 10px 10px;
-	-moz-border-radius: 0 10px 10px 10px;
-	border-radius: 0 10px 10px 10px;
+  -webkit-border-radius: 0 5px 5px 5px;
+	-moz-border-radius: 0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
   margin-top: 35px;
   padding-left: 0;
   width: 220px;
 }
 
+.nav-menu ul li a:hover, .nav-menu ul li:hover{
+  background-color: #466A90;
+}
+
+.nav-menu > li:hover a{
+  background-color: #507AA5;
+  color: #fff;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
 /*Make sub menus of sub menus list horizontally*/
 .nav-menu ul ul {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   top: -35px;
   left: 100%;
 }
@@ -123,15 +134,6 @@ a{
 .sub-menu li{
   width: 100%;
   padding: 0;
-}
-
-
-.nav-menu a:hover {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  background-color: #466A90;
-  color: #fff;
 }
 
 /*Show sub menus when moused over*/
