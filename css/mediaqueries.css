@@ -16,6 +16,13 @@
   .search{
     display: none;
   }
+  .nav-menu a{
+    padding: 0;
+    width: 25%;
+  }
+  .nav-menu{
+    display: block;
+  }
 }
 
 
@@ -30,6 +37,11 @@
   }
 }
 
+@media screen and (max-width: 670px) {
+  .nav-menu a{
+    width: 50%;
+  }
+}
 
 @media screen and (max-width: 650px) {
   .extra-info{
