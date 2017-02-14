@@ -27,6 +27,7 @@ h4{
 
 a{
   text-decoration: none;
+  color: #507AA5;
 }
 
 .arrow{
@@ -179,6 +180,24 @@ input:focus, select:focus, textarea:focus,button:focus {
 }
 
 /*MAIN*/
+.image{
+  position:relative;
+}
+
+#text{
+  position: absolute;
+  background-color: #507AA5;
+  color:white;
+  font-size:16px;
+  text-align: right;
+  top: 125px;
+  left: 6px;
+  width: 149px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
 .article-img {
   padding:5px;
   border:1px solid #DADADA;
@@ -197,8 +216,9 @@ article{
 
 article ul{
   list-style: none;
-  margin-top: 0;
+  margin-top: -15px;
   margin-left: 9em;
+  padding-bottom: .5em;
 }
 
 hr{
@@ -223,7 +243,7 @@ div{
 }
 
 .articles{
-  margin: 2em;
+  margin: 1em;
   width: 65vw;
 }
 
