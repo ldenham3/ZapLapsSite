@@ -258,7 +258,6 @@ div{
 
 .articles{
   margin: 1em;
-  width: 65vw;
   margin-left: 32px;
 }
 
@@ -346,7 +345,7 @@ div{
   top: 0;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1150px) {
   .flex-header li {
     float: left;
   }

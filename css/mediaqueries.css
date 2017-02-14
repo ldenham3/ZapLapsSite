@@ -1,11 +1,11 @@
 
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1150px) {
   .flex-header ul {
     overflow:visible;
   }
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1150px) {
   .nav-menu li{
     display: block;
     float: none;
@@ -24,18 +24,12 @@
     display: none;
   }
   article ul{
+    margin-top: 0;
     margin-left: 0;
-  }
-  .align-article-info{
-    width: 90vw;
-  }
-  .articles{
-    width: 90vw;
-  }
-  ul{
-    padding-left: 0;
+    padding: 0;
   }
 }
+
 
 @media screen and (max-width: 650px) {
   .extra-info{
@@ -43,5 +37,17 @@
   }
   .author{
     float: left;
+  }
+  .collapse-arrow{
+    display: none;
+  }
+  .articles{
+    width: 80vw;
+  }
+  .align-article-info{
+    width: 80vw;
+  }
+  .container{
+    margin-right: 32px;
   }
 }
