@@ -10,6 +10,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+hr{
+  margin: 2px 0 2px 0;
+}
+
+h1{
+  padding-bottom: 5px;
+  font-size: 2em;
+  margin: 0;
+}
+
+h4{
+  margin: 5px 0 5px 0;
+}
+
 /*main container*/
 .container{
   display: flex;
@@ -158,19 +172,21 @@ input:focus, select:focus, textarea:focus,button:focus {
 .article-img {
   padding:5px;
   border:1px solid #DADADA;
+	position: absolute;
+}
+
+.align-article-info{
+  vertical-align: top;
 }
 
 article{
   border-bottom: 2px solid #DADADA;
 }
 
-ul{
+article ul{
   list-style: none;
   margin-top: 0;
-}
-
-h1{
-  margin: 0;
+  margin-left: 10em;
 }
 
 p{
@@ -192,6 +208,7 @@ div{
 
 .articles{
   margin: 2em;
+  width: 70%;
 }
 
 /*TEST*/
