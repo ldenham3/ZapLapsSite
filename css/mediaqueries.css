@@ -50,4 +50,8 @@
   .container{
     margin-right: 32px;
   }
+  .flex-header{
+    margin: 0 0 0 32px;
+    width: 80vw;
+  }
 }
