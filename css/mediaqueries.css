@@ -1,7 +1,17 @@
-
 @media screen and (min-width: 1150px) {
   .flex-header ul {
     overflow:visible;
+  }
+  .flex-header li {
+    float: left;
+  }
+  .flex-header .nav-menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .flex-header .menu-icon {
+    display: none;
   }
 }
 

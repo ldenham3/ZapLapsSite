@@ -284,7 +284,7 @@ div{
   float: right;
   padding: 28px 20px;
   position: relative;
-  user-select: none;
+  /*user-select: none;*/
 }
 
 .flex-header .menu-icon .navicon {
@@ -343,18 +343,4 @@ div{
 .flex-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .flex-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
-}
-
-@media (min-width: 1150px) {
-  .flex-header li {
-    float: left;
-  }
-  .flex-header .nav-menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .flex-header .menu-icon {
-    display: none;
-  }
 }
